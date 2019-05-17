@@ -1,0 +1,147 @@
+<!--
+    Created by wangyang on 2019-05-16.
+    itwangyang@gmail.com
+    http://www.itwangyang.xyz
+-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=Edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
+	<meta name="apple-mobile-web-app-capable" content="yes">
+	<meta name="apple-mobile-web-app-status-bar-style" content="black">
+	<meta name="format-detection" content="telephone=no">
+	<title>Title</title>
+	<meta name="description" content="">
+	<meta name="keywords" content="">
+	<!--所有的IE都起作用：-->
+	<!--[if IE]>
+	<link rel="stylesheet" type="text/css" href="all-ie-only.css/> <![endif]-->
+
+</head>
+<body>
+
+<script>
+  /**
+   * 数据类型，----值类型：数字、字符串、布尔值、null、undefined
+   * 复杂数据类型：引用类型，对象：数组、函数、正则表达式、Date
+   */
+
+  //变量没有声明过，--》如果获取变量的值，是会产生语法错误的    console.log(a);
+
+  /**
+   * undefined场景：
+   * 1.一个变量声明了，但是没有赋值    var a; console.log(a);
+   * 2.一个变量声明了，并且赋值了一个undefined的值，var b = undefined;  console.log(b);
+   * 3.一个对象中，获取某个不存在的属性的值  var c ={};console.log(c.name);
+   */
+
+
+  /**
+   * 面向对象：
+   * 对象是键值对的集合：对象是由属性和方法构成的；
+   */
+
+  /**
+   * 对象属性的操作：
+   * 1.  第一种方式：.语法
+   * student.name
+   * 缺陷：后面不能使用js中的关键字、保留字(class/this/function/)
+   *      后面不能使用数字的
+   *
+   *
+   * 2.  第二种：使用更广，推荐
+   * student["name"];  等价于  student.name
+   *
+   *设置属性：
+   * student ["gender"] = "男";
+   *
+   *
+   * 删除属性：
+   * delete student["gender"]
+   *
+   */
+
+    //1.创建对象
+  const Person = {
+      gender: '男',
+      height: 185,
+      toShanghai: function () {
+        console.log('做🚄去上海');
+      }
+    };
+  //2.获取属性
+  console.log(Person.gender);
+  console.log(Person['height']);
+  //3.设置属性
+  Person.address = "上海市闸北区";
+  Person.height = 180;
+  //4.删除属性
+  delete Person.gender;
+  delete Person.a;
+  //5.清空对象
+  Person = {};  //Person对象不再具有任何属性
+  Person = null; //表示将Person变量的值赋为null,从此以后person不再是一个对象了
+
+
+  /**
+   * 通过构造函数创建对象
+   * 构造函数创建对象的例子：
+   *
+   * let xiaoming = new Object()  ---->  let xiaoming = {};
+   * let now  = new Date();
+   * let isMale = /123/;   ---->  let isMale = new RegExp('123');
+   * isMale 是通过RegExp构造函数创建出来的对象
+   * isMale 是RegExp构造函数的实例
+   *
+   * Object、Date、Array都是系统内置的构造函数
+   */
+
+
+  /**
+   * 构造函数的概念
+   * 任何函数都可以当做构造函数
+   *      function CreateFunc(){}
+   * 只要把一个函数通过new的方式进行调用，构造函数的调用
+   *      new CreateFunc();
+   * */
+
+  /**
+   * 构造函数的执行过程
+
+   var p1=new Person();
+   1、创建一个对象 (我们把这个对象称之为Person构造函数的实例)- _p1
+   2、创建一个内部对象，  this，将this指向该实例(p1)
+   3、执行函数内部的代码，其中，操作this的部分就是操作了该实例(p1)
+   4、返回值：
+       a、如果函数没有返回值(没有return语句)，那么就会返回构造函数的实例(p1)
+       b、如果函数返回了一个基本数据类型的值，那么本次构造函数的返回值是该实例(_p1)
+       js function fn(){
+
+        }
+       var f1=new fn();    //f1就是fn的实例
+
+       function fn2(){
+            return "abc";
+        }
+       var f2=new fn2();   //f2是fn2构造函数的实例
+
+       c、如果函数返回了一个复杂数据类型的值，那么本次函数的返回值就是该值
+
+       function fn3(){
+            return [1,3,5];
+            //数组是一个对象类型的值，
+            //所以数组是一个复杂数据类型的值
+            //-->本次构造函数的真正返回值就是该数组
+            //-->不再是fn3构造函数的实例
+        }
+       var f3=new fn3();   //f3还是fn3的实例吗？错
+       //f3值为[1,3,5]
+
+   */
+
+
+</script>
+</body>
+</html>

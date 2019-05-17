@@ -1,0 +1,38 @@
+<!--
+    Created by wangyang on 2019-05-12.
+    itwangyang@gmail.com
+    http://www.itwangyang.xyz
+-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>1.react</title>
+</head>
+<body>
+
+<div id="app"></div>
+
+<script src="../js/react.development.js"></script>
+<script src="../js/react-dom.development.js"></script>
+<script src="../js/babel.min.js"></script>
+
+<script type="text/babel">
+    //1.获取页面真实的容器元素
+    const containerDiv = document.getElementById('app');
+
+    //  2.JSX语法创建虚拟DOM对象
+    const vDom = <div> Hello React! </div>;
+
+    //  讲虚拟DOM渲染到页面元素上去
+    ReactDOM.render(vDom, containerDiv);
+</script>
+
+
+<!--简写-->
+<!--<script type="text/babel">
+    const vDom = <div> Hello React! </div>;
+    ReactDOM.render(vDom, document.getElementById('app'));
+</script>-->
+</body>
+</html>

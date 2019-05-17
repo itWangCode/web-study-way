@@ -1,0 +1,283 @@
+<!--
+    Created by wangyang on 2019-05-13.
+    itwangyang@gmail.com
+    http://www.itwangyang.xyz
+-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Title</title>
+</head>
+<body>
+
+<div id="app"></div>
+<script src="../js/react.development.js"></script>
+<script src="../js/react-dom.development.js"></script>
+<script src="../js/prop-types.js"></script>
+<script src="../js/babel.min.js"></script>
+<script type="text/babel">
+
+  // const vDom = <div>hello react</div>;
+  // ReactDOM.render(
+  //   vDom,
+  //   document.getElementById('app')
+  // )
+
+
+  // let myClass = 'itwang';
+  // let myContent = 'itwangyangCoder';
+  // const vDom = React.createElement('span',{className:myClass},myContent.toUpperCase());
+  // ReactDOM.render(
+  //   vDom,
+  //   document.getElementById('app')
+  // );
+
+  // let myClass = 'itwang';
+  // let myContent = 'itwangyangCoder';
+  // const vDom = <span className={myClass}>{myContent}</span>;
+  // ReactDOM.render(
+  //   vDom,
+  //   document.getElementById('app')
+  // )
+
+  // ReactDOM.render(
+  //   <div>
+  //     <p>haah</p>
+  //     <h3>嘻嘻</h3>
+  //   </div>
+  //   ,
+  //   document.getElementById('app')
+  // )
+
+
+  // const str = 'wangyang';
+  // ReactDOM.render(
+  //   <div>
+  //     <p>{str}</p>
+  //     <h1>10283-22-12*19={10283-22-12*19}</h1>
+  //   </div>
+  //   ,
+  //   document.getElementById('app')
+  // )
+
+  // const myStyle= {
+  //   backgroundColor:'yellow',
+  //   color:'red',
+  //   fontSize:40
+  // };
+  // ReactDOM.render(
+  //   <div>
+  //     <p style={myStyle}>itwangyang</p>
+  //   </div>,
+  //   document.getElementById('app')
+  // )
+
+
+  // const arr = [
+  //   {name:'wang',age:20},
+  //   {name:'wang2',age:23},
+  //   {name:'wang3',age:24},
+  //   {name:'wang4',age:25},
+  // ];
+  // ReactDOM.render(
+  //   <ul>
+  //     {
+  //       arr.map((data,index) =>(
+  //           <li key={index}>{index+1}---姓名：{data.name}---年龄：{data.age}</li>
+  //         )
+  //       )
+  //     }
+  //   </ul>,
+  //   document.getElementById('app')
+  // )
+
+
+  // function Wang(props) {
+  //   return (
+  //     <div>姓名：{props.name},性别:{props.age}</div>
+  //   );
+  // }
+  // ReactDOM.render(
+  //   <Wang name="wang" age="20"/>,
+  //   document.getElementById('app')
+  // )
+
+
+  // function Name(props) {
+  //   return (
+  //     <div>
+  //       <p>我叫：{props.name}</p>
+  //     </div>
+  //   )
+  // }
+  //
+  // function Age(props) {
+  //   return (
+  //     <div>
+  //       <p>今天{props.age}岁</p>
+  //     </div>
+  //   )
+  // }
+  //
+  // function Wang(props) {
+  //   return (
+  //     <div>
+  //       <Name name="wangCoder"/>
+  //       <Age age="20"/>
+  //     </div>
+  //   )
+  // }
+  //
+  // ReactDOM.render(
+  //   <Wang/>,
+  //   document.getElementById('app')
+  // )
+
+
+  //
+  // class Wang extends React.Component{
+  //   render(){
+  //     return(
+  //       <div>
+  //         <p>我叫：{this.props.name}</p>
+  //       </div>
+  //     )
+  //   }
+  // }
+  // ReactDOM.render(
+  //   <Wang name="wangyangCoder"/>,
+  //   document.getElementById('app')
+  // )
+
+
+
+
+  // class Wang extends React.Component{
+  //   constructor(props){
+  //     super(props);
+  //
+  //     //初始化状态
+  //     this.state = {
+  //       name:'wangyang',
+  //       age:20
+  //     };
+  //     this.handleChangeData = this.handleChangeData.bind(this);
+  //
+  //   }
+  //   render(){
+  //     const {name,age} = this.state;
+  //     return(
+  //       <div>
+  //         <p>我叫:{name},年龄:{age}</p>
+  //         <button onClick={this.handleChangeData}>点击我呀</button>
+  //       </div>
+  //     )
+  //   }
+  //   handleChangeData(){
+  //     this.setState({
+  //       name:'wang11',
+  //       age:'19'
+  //     })
+  //   }
+  // }
+  //
+  // ReactDOM.render(
+  //   <Wang/>,
+  //   document.getElementById('app')
+  // )
+
+
+  //1.组件类
+/*  class Dog extends React.Component {
+    constructor(props) {
+      super(props);
+      //狗：姓名，性别，年龄，狗友
+      //2.初始化state
+      this.state = {
+        age: 1,//年龄
+        dogFriends: [],//狗友
+      };
+
+      this.addYear = this.addYear.bind(this)
+    }
+
+    //  3.设置props属性的默认值
+    static defaultProps = {
+      name: 'wang',
+      gender: '母',
+    };
+
+    //4.设置props属性的类型
+    static propTypes = {
+      name:PropTypes.string.isReferenced,
+      gender: PropTypes.string.isReferenced
+    };
+
+    render() {
+      const {name, gender} = this.props;
+      const {age, dogFriends} = this.state;
+      return (
+        <div>
+          <p>狗名：{name},性别：{gender}</p>
+          <p>我今年{age}岁</p>
+          <p>我又很多狗友:</p>
+          <ul>
+            {dogFriends.map((friend, index) => (
+              <li key={index}>{friend}</li>
+            ))}
+          </ul>
+          <button onClick={this.addYear}>增加一岁</button>
+        </div>
+      )
+    }
+
+    addYear() {
+      //1、。增加狗友
+      let tempArr = this.state.dogFriends;
+      tempArr.push('狗友' + Math.floor(Math.random() * 100));
+
+      //  2,更新状态
+      this.setState({
+        age: this.state.age + 1,//年龄
+        dogFriends: tempArr,//狗友
+      })
+    }
+  }
+  ReactDOM.render(
+    <Dog name="小花花"/>,
+    document.getElementById('app')
+  )*/
+
+class CustomTextInput extends React.Component{
+  constructor(props){
+    super(props);
+    this.myBtn = React.createRef();
+    this.myInput = React.createRef();
+    this.focusText = this.focusText.bind(this);
+  }
+  render(){
+    return(
+      <div>
+        <input type="text" placeholder="请您输入内容" ref={this.myInput}/>
+        <input type="button" value="点击焦点" onClick={this.focusText} ref={this.myBtn}/>
+      </div>
+    )
+  }
+
+  focusText(){
+    console.log(this.myInput.current);
+    this.myInput.current.focus();
+
+  }
+}
+
+ReactDOM.render(
+  <CustomTextInput/>,
+  document.getElementById('app')
+)
+
+
+</script>
+</body>
+</html>

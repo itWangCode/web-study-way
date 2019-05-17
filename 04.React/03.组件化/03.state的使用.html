@@ -1,0 +1,54 @@
+<!--
+    Created by wangyang on 2019-05-12.
+    itwangyang@gmail.com
+    http://www.itwangyang.xyz
+-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Title</title>
+</head>
+<body>
+
+<div id="app"></div>
+<script src="../js/react.development.js"></script>
+<script src="../js/react-dom.development.js"></script>
+<script src="../js/babel.min.js"></script>
+<script type="text/babel">
+  //1,创建组件类
+  class Wang extends React.Component{
+    constructor(props){
+      super(props);
+      // 2. 初始化状态
+      this.state = {
+        name: 'wang',
+        gender: '男',
+        intro: 'itwangyang520'
+      };
+      this.dealClick = this.dealClick.bind(this);
+    }
+    render(){
+      const {name, gender, intro} = this.state;
+      return (
+        <div>
+          <h3>我叫：{name}, 性别：{gender}, 代表作：{intro}</h3>
+          {/*<button onClick={()=>this.dealClick()}>换一个</button>*/}
+          <button onClick={this.dealClick}>换一个</button>
+        </div>
+      )
+    }
+    dealClick(){
+      // alert('点了'+this);
+      this.setState({
+          name: 'wang2',
+          gender: '女',
+          intro: 'itwangyang'
+        });
+    }
+  }
+//  2.渲染到DOM容器
+  ReactDOM.render(<Wang/>,document.getElementById('app'));
+</script>
+</body>
+</html>

@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title></title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link href="css/style.css" rel="stylesheet">
+        <style>
+            canvas{
+               border: 1px solid red;
+            }
+        </style>
+    </head>
+    <body>  
+        <canvas width="600" height="400"></canvas>
+
+        <script>
+            //获取canvas画布对象
+            var canvas = document.querySelector("canvas");
+
+            //获取绘图上下文
+            var ctx = canvas.getContext("2d");
+
+            //先落笔
+            ctx.moveTo(100,100);
+
+            //连线
+            ctx.lineTo(100,200);
+            ctx.lineTo(200,200);
+            //ctx.lineTo(100,100);
+            ctx.closePath();//闭合路线
+
+            //描边
+            ctx.stroke();
+
+            //重新画，就要写这句话
+            // ctx.beginPath();
+
+            // //设置带颜色的线
+            // ctx.moveTo(100,150);
+            // ctx.lineTo(300,150);
+            // ctx.strokeStyle="red";
+            // ctx.stroke();
+        </script>
+
+    </body>
+</html>

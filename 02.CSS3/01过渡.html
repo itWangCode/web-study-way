@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title></title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link href="css/style.css" rel="stylesheet">
+        <style>
+            /* 动画的开水状态   浏览器中元素的默认现在效果 */
+            .box1{
+                width: 200px;
+                height: 200px;
+                background-color: red;
+
+                /* 设置那些熟悉要参与到过渡动画效果中 */
+                transition-property: all;
+                transition-duration: 1s;
+                transition-delay: 1s;
+                /* transition-timing-function: linear */
+                transition-timing-function: ease;
+
+                /* 合起来写法 */
+                /* transition: all 1s linear 1s; */
+            }
+
+            /* 动画的结束状态 */
+            .box1:hover{
+                width: 400px;
+                height: 400px;
+                background-color: green;
+            }
+        </style>
+    </head>
+    <body>
+        <div class="box1"></div>
+    </body>
+</html>

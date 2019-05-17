@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title></title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link href="css/style.css" rel="stylesheet">
+        <style>
+            canvas{
+                border: 1px solid red;
+            }
+        </style>
+    </head>
+    <body>
+        <canvas width="600" height="400"></canvas>
+        <script>
+            var canvas = document.querySelector("canvas");
+            var ctx = canvas.getContext("2d");
+            var lgd = ctx.createRadialGradient(100,50,300,50,200,30);
+            //添加开始颜色
+            lgd.addColorStop(0,"red");
+            //添加结束颜色
+            lgd.addColorStop(1,"blue");
+            ctx.fillStyle = lgd;
+            ctx.moveTo(100,50);
+            ctx.lineTo(300,50);
+            ctx.lineTo(300,300);
+            ctx.lineTo(100,300);
+            ctx.closePath();
+            ctx.fill();
+
+            //清除画布
+            ctx.clearRect(0,0,600,400);
+
+        </script>
+    </body>
+</html>

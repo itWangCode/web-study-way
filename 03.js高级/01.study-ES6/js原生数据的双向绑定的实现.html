@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title></title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link href="css/style.css" rel="stylesheet">
+</head>
+<body>
+<input type="text" id="aa"/>
+<span id="bb">{{inputContent}}</span>
+<script>
+    var obj = {};
+    Object.defineProperty(obj, 'inputContent', {
+        set: function (val) {
+            document.getElementById('bb').innerHTML = val;
+            document.getElementById('aa').value = val;
+        }
+    });
+    document.getElementById('aa').onkeyup = function (e) {
+        obj.inputContent = e.target.value;
+    };
+    obj.inputContent = "";
+
+
+</script>
+</body>
+</html>
