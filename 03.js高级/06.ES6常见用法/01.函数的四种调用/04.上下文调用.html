@@ -1,0 +1,75 @@
+<!--
+    Created by wangyang on 2019-05-22.
+    itwangyang@gmail.com
+    http://www.itwangyang.xyz
+-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black">
+  <meta name="format-detection" content="telephone=no">
+  <title>Title</title>
+  <meta name="description" content="">
+  <meta name="keywords" content="">
+  <!--所有的IE都起作用：-->
+  <!--[if IE]>  <link rel="stylesheet" type="text/css" href="all-ie-only.css/> <![endif]-->
+
+</head>
+<body>
+
+
+
+<script>
+  //上下文调用方式，有3种，call、apply、bind
+  function f1(){
+    console.log(this);
+  }
+  //call方法的第一个参数决定了函数内部的this的值
+  f1.call([1,3,5]);
+  f1.call({age:20,height:1000});
+  f1.call(1);
+  f1.call("abc");
+  f1.call(true);
+  f1.call(null);
+  f1.call(undefined);
+
+  //上述代码可以用apply完全替换
+  f1.apply([1,3,5]);
+  f1.apply({age:20,height:1000});
+  f1.apply(1);
+  f1.apply("abc");
+  f1.apply(true);
+  f1.apply(null);
+  f1.apply(undefined);
+
+  //总结：
+  //call方法的第一个参数：
+  //1、如果是一个对象类型，那么函数内部的this指向该对象
+  //2、如果是undefined、null，那么函数内部的this指向window
+  //3、如果是数字-->this：对应的Number构造函数的实例
+  //      -->   1   --> new Number(1)
+  //  如果是字符串-->this：String构造函数的实例
+  //      --> "abc"   --> new String("abc")
+  //  如果是布尔值-->this：Boolean构造函数的实例
+  //      --> false   --> new Boolean(false)
+
+
+
+
+
+
+  //call和apply区别：
+  //call和apply都可以改变函数内部的this的值，是立即执行了这个函数，并且执行过程中绑定了this的值，bind并没有即可执行这个函数，而是创建了一个新函数，新函数绑定了this的值，不执行bind的浏览器，可以用闭包实现
+  //不同的地方：传参的形式不同
+  function toString(a,b,c){
+    console.log(a+" "+b+" "+c);
+  }
+  toString.call(null,1,3,5);   //"1 3 5"
+  toString.apply(null,[1,3,5])//"1 3 5"
+</script>
+</body>
+</html>
