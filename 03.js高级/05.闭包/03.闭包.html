@@ -1,0 +1,145 @@
+<!--
+    Created by wangyang on 2019-05-21.
+    itwangyang@gmail.com
+    http://www.itwangyang.xyz
+-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black">
+  <meta name="format-detection" content="telephone=no">
+  <title>Title</title>
+  <meta name="description" content="">
+  <meta name="keywords" content="">
+  <!--所有的IE都起作用：-->
+  <!--[if IE]>  <link rel="stylesheet" type="text/css" href="all-ie-only.css/> <![endif]-->
+
+</head>
+<body>
+
+
+
+<script>
+  function fn(){
+    var a=5;
+    return function(){
+      a++;
+      console.log(a);     //a变量肯定是可以访问的
+    }
+  }
+  var f1=fn();        //f1指向匿名函数
+  f1();       //6
+  f1();       //7
+  f1();       //8
+
+
+  //代码执行到20行fn函数执行完毕，返回匿名函数
+  //      -->一般认为函数执行完毕，变量就会释放，但是此时由于js引擎发现匿名函数要使用a变量，所以a变量并不能得到释放，而是把a变量放在匿名函数可以访问到的地方去了
+  //      -->a变量存在于f1函数可以访问到的地方，当然此时a变量只能被f1函数访问
+
+
+
+
+//模块化思想：也是一种模块化
+//  在js中模块化开发，是使用闭包
+ var ktv = ( function KTV() {
+    var leastPrice = 1000;
+    var total = 0;
+    return {
+      //购物
+      buy:function (price) {
+        total +=price;
+      },
+      //结账
+      pay:function () {
+        if (total<=leastPrice){
+          console.log("请您继续购物");
+        } else {
+          console.log("欢迎下次光临");
+        }
+      },
+      //管理员修改
+      editLeast:function (id,price) {
+        if (id===888){
+          leastPrice = price;
+          console.log('现在最低消费金额：', leastPrice);
+        } else {
+          console.log('权限不足');
+        }
+      }
+    }
+  })();
+
+
+
+  var datepicker=(function(){
+    var hour=3600*1000;
+    return function(){
+      console.log('日期控件初始化');
+    }
+  })();
+
+  var common=(function(){
+    return {
+      isStr:function(){
+
+      },
+      isNumber:function(){
+
+      }
+    }
+  })()
+
+
+  /*函数的4种调用方式
+
+  1、函数调用
+   var age=18;
+   var p={
+    age:15
+    say:function(){
+      console.log(this.age);
+      }
+    }
+    var s1=p.say()
+    s1(); //函数调用
+
+  2、方法调用
+  var age=18;
+  var p={
+    age:15
+    say:function(){
+    console.log(this.age);
+    }
+   }
+   p.say()//方法调用
+
+  3、new调用(构造函数)
+  var age=18;
+  var p={
+    age:15
+    say:function(){
+      console.log(this.age);
+     }
+    }
+   new p.say()//构造函数调用
+
+  4、上下文方式(call、apply、bind)
+   var length=21;
+   function f1(){
+    console.log(this.length);
+   }
+    f1.call([1,3,5])
+    f1.apply(this)
+    f1.call(5)
+
+  在ES6的箭头函数之前的时代，想要判断一个函数内部的this指向谁，就是根据上面的四种方式来决定的*/
+
+
+</script>
+</body>
+</html>

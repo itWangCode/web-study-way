@@ -1,0 +1,45 @@
+<!--
+    Created by wangyang on 2019-05-20.
+    itwangyang@gmail.com
+    http://www.itwangyang.xyz
+-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black">
+  <meta name="format-detection" content="telephone=no">
+  <title>Title</title>
+  <meta name="description" content="">
+  <meta name="keywords" content="">
+  <!--所有的IE都起作用：-->
+  <!--[if IE]>
+  <link rel="stylesheet" type="text/css" href="all-ie-only.css/> <![endif]-->
+
+</head>
+<body>
+
+  <div id="app">
+    <ul>
+      <my-component v-for="item in items" v-bind:item1="item"></my-component>
+    </ul>
+  </div>
+<script src="https://cdn.bootcss.com/vue/2.6.10/vue.js"></script>
+<script src="https://cdn.bootcss.com/axios/0.19.0-beta.1/axios.min.js"></script>
+<script>
+  Vue.component("my-component",{
+    props:['item1'],
+    template:'<li>{{item1}}</li>'
+  });
+  var vm = new Vue({
+    el: '#app',
+    data: {
+      items:["张三","李四","王五"]
+    }
+  });
+</script>
+</body>
+</html>

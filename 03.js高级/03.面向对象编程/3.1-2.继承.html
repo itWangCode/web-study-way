@@ -1,0 +1,225 @@
+<!--
+    Created by wangyang on 2019-05-17.
+    itwangyang@gmail.com
+    http://www.itwangyang.xyz
+-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black">
+  <meta name="format-detection" content="telephone=no">
+  <title>Title</title>
+  <meta name="description" content="">
+  <meta name="keywords" content="">
+  <!--所有的IE都起作用：-->
+  <!--[if IE]>  <link rel="stylesheet" type="text/css" href="all-ie-only.css/> <![endif]-->
+
+</head>
+<body>
+
+
+
+<script>
+  function Person(name,age) {
+    this.name = name;
+    this.age = age;
+    this.sayHello = function () {
+
+    };
+  }
+  let p1 = new Person();
+  let p2 = new Person();
+  console.log(p1.sayHello === p2.sayHello);//false
+  //没有指向同一块内存，会造成内存浪费；解决方案：吧sayHello写在他们共同的（父对象）中
+
+  //其实他们共同的父对象，就可以通过Person.prototype来获取，就可以指向同一块内存中
+
+  Person.prototype.run = function () {
+    console.log('hha');
+  };
+  p1.run();
+  p2.run();
+  console.log(p1.run === p2.run);//true
+
+  //结论：只要往某个构造函数的prototype对象中添加某个属性，方法，那么这样的属性，方法都可以被所有的构造函数的实例所共享
+
+  //----》在这里，【构造函数的prototype对象】称为原型对象
+
+  /**
+   * Person的原型对象是谁？
+   * ---》手写要知道Person的构造函数：-----》Function
+   * --->所有Person的原型对象是：Function.prototype
+   *
+   */
+
+
+
+
+  //继承第一种方式
+  function Tiger() {
+    
+  }
+  
+  Tiger.prototype = {
+    sayHello:function () {
+
+    },
+    eat:function () {
+      
+    }
+  };
+  let tiger = new Tiger();
+  console.log(tiger.sayHello);
+  console.log(tiger.eat);
+  //缺点：添加1，2个无所谓，但是如果太多了，内存浪费
+
+
+
+
+   //继承的第一种方式：原型链继承1
+  /**
+   *  Person.prototype.say=function(){
+   *    console.log("你好")
+   * }
+   缺点：添加1、2个方法无所谓，但是如果方法很多会导致过多的代码冗余
+
+
+
+  // 继承的第二种方式：原型链继承2
+
+   Person.prototype={
+    constructor:Person,
+    say:function(){
+      console.log("你好");
+    },
+    run:function(){
+      console.log("正在进行百米冲刺");
+    }
+  }
+   注意点：
+   a、一般情况下，应该先改变原型对象，再创建对象
+   b、一般情况下，对于新原型，会添加一个constructor属性，从而不破坏原有的原型对象的结构
+
+
+   //继承的第三种方式：拷贝继承(混入继承)
+
+   场景：有时候想使用某个对象中的属性，但是又不能直接修改它，于是就可以创建一个该对象的拷贝
+     实现1：
+       js var source={name:"李白",age:15}
+       var target={};
+       target.name=source.name;
+       target.age=source.age;
+
+   上面的方式很明显无法重用，实际代码编写过程中，很多时候都会使用拷贝继承的方式，所以为了重用，可以编写一个函数把他们封装起来：
+     function extend(target,source){
+       for(key in source){
+         target[key]=source[key];
+         }
+         return target;
+       }
+     extend(target,source)
+
+   由于拷贝继承在实际开发中使用场景非常多，所以很多库都对此有了实现
+
+   jquery：$.extend
+   es6中有了对象扩展运算符仿佛就是专门为了拷贝继承而生： js var source={name:"李白",age:15} var target={ ...source }
+
+   //继承的第四种方式：原型式继承
+
+   场景：
+   创建一个纯洁的对象
+   创建一个继承自某个父对象的子对象
+   使用方式：
+   - 空对象：Object.create(null)
+   var o1={ say:function(){} }
+   var o2=Object.create(o1);
+   继承的第五种方式：借用构造函数实现继承
+
+   场景：适用于2种构造函数之间逻辑有相似的情况
+   function Animal(name){
+      this.name=name;
+    }
+   function Person(name,age){
+     this.name=name;
+     this.age=age;
+   }
+
+   以上代码用借用构造函数实现 js function Animal(name,age){
+     this.name=name;
+     this.age=age;
+   }
+   function Person(name,age,address){
+     Animal.call(this,name);
+     //this.name=name;
+     //this.age=age;
+     this.address=address;
+   }
+   *
+   */
+
+  let o3 = {gender:'男',grade:'大一',group:'第一组',name:'嘻嘻'};
+  let o4 = {};
+  for (let key in o3){
+    let value = o3[key];
+    o4[key] = value;
+  }
+  o4.name = '哈哈'
+  console.log(o4);
+
+  /**
+   *
+   * 拷贝是属于继承的！！！！
+   * 浅拷贝和深拷贝
+   *    浅拷贝只是拷贝一层属性，没有内部对象
+   *    深拷贝其实是利用了递归的原理，讲对象的若干层属性拷贝出来
+   *
+   *
+   *
+   */
+
+  function extend(source,target) {
+    for (let key in source){
+      let value = o3[key];
+      target[key] = value;
+    }
+  }
+  let o3 = {gender:'男',grade:'大一',group:'第一组',name:'嘻嘻'};
+  let o4 = {};
+  extend(o3,o4);
+  console.log(o4);
+
+
+  /**
+   * es6中对象扩展运算符
+   *
+   */
+  let source = {name:'wangCoder',age:19};
+  let target = {...source};
+  console.log(target);
+  let target2 = {...source,age:20};
+  console.log(target2);
+
+
+
+
+  function Animal(name,age) {
+    this.name = name;
+    this.age = age;
+  }
+  function Person(name,age,say) {
+   Animal.call(this,name,age);
+   this.say = say;
+  }
+  let p1 = new Person("itwang",20,function () {
+    console.log('吃饭');
+  });
+  console.log(p1);
+
+
+</script>
+</body>
+</html>
