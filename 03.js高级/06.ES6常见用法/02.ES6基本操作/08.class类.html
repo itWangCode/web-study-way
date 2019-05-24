@@ -1,5 +1,5 @@
 <!--
-    Created by wangyang on 2019-05-22.
+    Created by wangyang on 2019-05-24.
     itwangyang@gmail.com
     http://www.itwangyang.xyz
 -->
@@ -24,50 +24,25 @@
 
 
 <script>
- function f() {
-  return  new Promise(resolve => {
-     setTimeout(()=>{
-       resolve("您好");
-     },1000)
-   })
- }
-
- (async function() {
-   let res = await f();
-   console.log(res);
-
-   let res1 = await f();
-   console.log(res1);
- })();
+  //以前的防水，构造函数的方式
+  function Person(name,age) {
+    this.name = name;
+    this.age = age;
+  }
+  let p1 = new Person("wangyang",18);
+  console.log(p1);
 
 
- var o1={
-   say:async ()=>{
-     console.log('say方法：');
-
-     const res = await q();
-
-     console.log(res);
-   },
-   run:async function(){
-     console.log('run方法');
-
-     const res = await q();
-
-     console.log(res);
-   }
- };
-
- //需求，先执行完毕say，再执行run
- var fn=async function(){
-   await o1.say();
-
-   await o1.run();
- };
- fn();
-
-
-
+  //类的方式
+  class Student{
+    //构造方法
+    constructor(name,age){
+      this.name = name;
+      this.age = age;
+    }
+  }
+  var s1 = new Student("wanngcoder",20);
+  console.log(s1);
 </script>
 </body>
 </html>

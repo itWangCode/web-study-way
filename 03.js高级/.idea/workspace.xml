@@ -2,26 +2,14 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="6f599861-1937-47a1-9213-52ebf3ab6b77" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/06.ES6常见用法/01.函数的四种调用/04.上下文调用.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/06.ES6常见用法/01.函数的四种调用/04.上下文调用bind.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/06.ES6常见用法/01.函数的四种调用/04.实战的bind.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/06.ES6常见用法/02.ES6基本操作/01.模板字符串.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/06.ES6常见用法/02.ES6基本操作/02.解构赋值.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/06.ES6常见用法/02.ES6基本操作/03.函数的扩展.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/06.ES6常见用法/02.ES6基本操作/04.箭头函数.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/06.ES6常见用法/02.ES6基本操作/04.箭头函数的特点.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/06.ES6常见用法/02.ES6基本操作/05.对象扩展.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/06.ES6常见用法/02.ES6基本操作/06-1.promise如任何解决回调地狱的.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/06.ES6常见用法/02.ES6基本操作/06-2.promise传参.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/06.ES6常见用法/02.ES6基本操作/06-3 promis错误处理.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/06.ES6常见用法/02.ES6基本操作/06-4.promise捕获错误.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/06.ES6常见用法/02.ES6基本操作/06-5.promise多层异步使用catch.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/06.ES6常见用法/02.ES6基本操作/06-6.promise里面的返回值.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/06.ES6常见用法/02.ES6基本操作/06.promise.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/06.ES6常见用法/02.ES6基本操作/07-1.async处理返回值.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/06.ES6常见用法/02.ES6基本操作/07.async.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/06.ES6常见用法/02.ES6基本操作/07-2.async错误处理.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/06.ES6常见用法/02.ES6基本操作/08-1.class类的方法.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/06.ES6常见用法/02.ES6基本操作/08-2.class类的静态方法.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/06.ES6常见用法/02.ES6基本操作/08-3.class类的继承.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/06.ES6常见用法/02.ES6基本操作/08.class类.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/07.JS库封装/01.入口函数.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/06.ES6常见用法/01.函数的四种调用/03.构造函数.html" beforeDir="false" afterPath="$PROJECT_DIR$/06.ES6常见用法/01.函数的四种调用/03.构造函数.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/06.ES6常见用法/02.ES6基本操作/07-1.async处理返回值.html" beforeDir="false" afterPath="$PROJECT_DIR$/06.ES6常见用法/02.ES6基本操作/07-1.async处理返回值.html" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -34,47 +22,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/06.ES6常见用法/02.ES6基本操作/06-4.promise捕获错误.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="358">
-              <caret line="39" column="21" lean-forward="true" selection-end-line="51" selection-end-column="7" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/06.ES6常见用法/02.ES6基本操作/06-5.promise多层异步使用catch.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="501">
-              <caret line="47" lean-forward="true" selection-start-line="47" selection-end-line="47" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/06.ES6常见用法/02.ES6基本操作/06-6.promise里面的返回值.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="402">
-              <caret line="27" column="20" lean-forward="true" selection-start-line="27" selection-start-column="20" selection-end-line="27" selection-end-column="20" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/06.ES6常见用法/02.ES6基本操作/07.async.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="517">
-              <caret line="53" column="23" lean-forward="true" selection-start-line="53" selection-start-column="23" selection-end-line="53" selection-end-column="23" />
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/06.ES6常见用法/02.ES6基本操作/07-1.async处理返回值.html">
+        <entry file="file://$PROJECT_DIR$/07.JS库封装/01.入口函数.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="44">
-              <caret line="22" lean-forward="true" selection-start-line="22" selection-end-line="22" />
+            <state relative-caret-position="534">
+              <caret line="21" column="6" lean-forward="true" selection-start-line="21" selection-start-column="6" selection-end-line="21" selection-end-column="6" />
             </state>
           </provider>
         </entry>
@@ -147,6 +99,12 @@
         <option value="$PROJECT_DIR$/06.ES6常见用法/02.ES6基本操作/06-6.promise里面的返回值.html" />
         <option value="$PROJECT_DIR$/06.ES6常见用法/02.ES6基本操作/07.async.html" />
         <option value="$PROJECT_DIR$/06.ES6常见用法/02.ES6基本操作/07-1.async处理返回值.html" />
+        <option value="$PROJECT_DIR$/06.ES6常见用法/02.ES6基本操作/07-2.async错误处理.html" />
+        <option value="$PROJECT_DIR$/06.ES6常见用法/02.ES6基本操作/08.class类.html" />
+        <option value="$PROJECT_DIR$/06.ES6常见用法/02.ES6基本操作/08-1.class类的方法.html" />
+        <option value="$PROJECT_DIR$/06.ES6常见用法/02.ES6基本操作/08-2.class类的静态方法.html" />
+        <option value="$PROJECT_DIR$/06.ES6常见用法/02.ES6基本操作/08-3.class类的继承.html" />
+        <option value="$PROJECT_DIR$/07.JS库封装/01.入口函数.html" />
       </list>
     </option>
   </component>
@@ -168,17 +126,6 @@
               <item name="03.js高级" type="b2602c69:ProjectViewProjectNode" />
               <item name="03.js高级" type="462c0819:PsiDirectoryNode" />
             </path>
-            <path>
-              <item name="03.js高级" type="b2602c69:ProjectViewProjectNode" />
-              <item name="03.js高级" type="462c0819:PsiDirectoryNode" />
-              <item name="06.ES6常见用法" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="03.js高级" type="b2602c69:ProjectViewProjectNode" />
-              <item name="03.js高级" type="462c0819:PsiDirectoryNode" />
-              <item name="06.ES6常见用法" type="462c0819:PsiDirectoryNode" />
-              <item name="02.ES6基本操作" type="462c0819:PsiDirectoryNode" />
-            </path>
           </expand>
           <select />
         </subPane>
@@ -193,12 +140,13 @@
     <property name="settings.editor.selected.configurable" value="preferences.sourceCode.HTML" />
   </component>
   <component name="RecentsManager">
-    <key name="MoveFile.RECENT_KEYS">
-      <recent name="$PROJECT_DIR$/01.study-ES6" />
-    </key>
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/06.ES6常见用法/02.ES6基本操作" />
       <recent name="$PROJECT_DIR$/06.ES6常见用法/01.函数的四种调用" />
       <recent name="$PROJECT_DIR$/02.study-ajax" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/01.study-ES6" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -244,17 +192,19 @@
       <workItem from="1558401952806" duration="4038000" />
       <workItem from="1558411089857" duration="5381000" />
       <workItem from="1558484587348" duration="16650000" />
+      <workItem from="1558533967891" duration="228000" />
+      <workItem from="1558663858156" duration="4392000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="76120000" />
+    <option name="totallyTimeSpent" value="80740000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="0" width="1680" height="1050" extended-state="0" />
     <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.07353827" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.029535865" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
@@ -277,20 +227,6 @@
     <option name="version" value="1" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/01.study-ES6/01.ES6">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="145">
-          <caret line="5" column="25" selection-start-line="5" selection-start-column="25" selection-end-line="5" selection-end-column="25" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/01.study-ES6/02.ES6.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="717">
-          <caret line="251" column="4" lean-forward="true" selection-start-line="251" selection-start-column="4" selection-end-line="251" selection-end-column="4" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/请求.html" />
     <entry file="file://$APPLICATION_HOME_DIR$/plugins/JavaScriptLanguage/jsLanguageServicesImpl/external/lib.es5.d.ts">
       <provider selected="true" editor-type-id="text-editor">
@@ -533,36 +469,78 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/06.ES6常见用法/02.ES6基本操作/06-4.promise捕获错误.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="358">
-          <caret line="39" column="21" lean-forward="true" selection-end-line="51" selection-end-column="7" />
+        <state relative-caret-position="1287">
+          <caret line="39" column="21" selection-end-line="51" selection-end-column="7" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/06.ES6常见用法/02.ES6基本操作/06-5.promise多层异步使用catch.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="501">
-          <caret line="47" lean-forward="true" selection-start-line="47" selection-end-line="47" />
+        <state relative-caret-position="864">
+          <caret line="47" selection-start-line="47" selection-end-line="47" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/06.ES6常见用法/02.ES6基本操作/06-6.promise里面的返回值.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="402">
+        <state relative-caret-position="864">
           <caret line="27" column="20" lean-forward="true" selection-start-line="27" selection-start-column="20" selection-end-line="27" selection-end-column="20" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/06.ES6常见用法/02.ES6基本操作/07.async.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="517">
-          <caret line="53" column="23" lean-forward="true" selection-start-line="53" selection-start-column="23" selection-end-line="53" selection-end-column="23" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/06.ES6常见用法/02.ES6基本操作/07-1.async处理返回值.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="44">
-          <caret line="22" lean-forward="true" selection-start-line="22" selection-end-line="22" />
+        <state relative-caret-position="365">
+          <caret line="51" column="24" lean-forward="true" selection-end-line="72" selection-end-column="7" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/06.ES6常见用法/02.ES6基本操作/07.async.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="402">
+          <caret line="39" column="3" lean-forward="true" selection-end-line="63" selection-end-column="7" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/06.ES6常见用法/02.ES6基本操作/07-2.async错误处理.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="395">
+          <caret line="44" column="6" lean-forward="true" selection-start-line="44" selection-start-column="6" selection-end-line="44" selection-end-column="6" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/06.ES6常见用法/02.ES6基本操作/08.class类.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="390">
+          <caret line="35" column="8" lean-forward="true" selection-start-line="35" selection-start-column="8" selection-end-line="35" selection-end-column="8" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/06.ES6常见用法/02.ES6基本操作/08-1.class类的方法.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="297">
+          <caret line="37" column="6" selection-start-line="37" selection-start-column="6" selection-end-line="37" selection-end-column="6" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/06.ES6常见用法/02.ES6基本操作/08-2.class类的静态方法.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="633">
+          <caret line="44" selection-start-line="44" selection-end-line="44" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/06.ES6常见用法/02.ES6基本操作/08-3.class类的继承.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="203">
+          <caret line="26" column="6" lean-forward="true" selection-start-line="26" selection-start-column="6" selection-end-line="26" selection-end-column="6" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/07.JS库封装/01.入口函数.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="534">
+          <caret line="21" column="6" lean-forward="true" selection-start-line="21" selection-start-column="6" selection-end-line="21" selection-end-column="6" />
         </state>
       </provider>
     </entry>
