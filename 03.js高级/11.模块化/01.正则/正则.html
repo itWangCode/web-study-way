@@ -1,0 +1,88 @@
+<!--
+    Created by wangyang on 2019-05-26.
+    itwangyang@gmail.com
+    http://www.itwangyang.xyz
+-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black">
+  <meta name="format-detection" content="telephone=no">
+  <title>Title</title>
+  <meta name="description" content="">
+  <meta name="keywords" content="">
+  <!--所有的IE都起作用：-->
+  <!--[if IE]>  <link rel="stylesheet" type="text/css" href="all-ie-only.css/> <![endif]-->
+
+</head>
+<body>
+
+
+
+<script>
+  /*
+
+  正则表达式是为了解决字符串操作中一些比较麻烦的场景，比如字符串提取、字符串替换、字符串验证等
+  常用于：表单验证：是否是一个数字、是一个电话号码、是一个邮箱。。。
+  字符串替换：
+  字符串查找
+  ✨正则表达式其实也是js里面的一个对象
+
+   */
+
+  //创建一个正则表达式
+  var reg2=new RegExp("a");
+  var reg1=/a/;
+  //其中//是标记，a表示要匹配的字符
+
+
+
+  /*
+
+  正则表达式匹配
+    var reg=/a/;        //匹配字符串中的a字符
+    reg.test("abc");
+    //正则表达式的test用来检测字符串是否满足正则表达式的要求；
+    //由于"abc"中存在a，所以是符合要求的，所以这段代码的返回值为：true
+
+    const isTrue = reg.test("coke");   //由于"coke"中不存在a字符，所以不符合条件   -->isTrue:false
+
+
+    var reg2=/abc/;
+    reg2.test("adbcd"); //字符串中必然存在"abc"才符合要求，所以这段代码的返回值为false
+
+    reg2.test("1abc");  //true
+    reg2.test("abc123");    //true
+    reg2.test("abcabc");    //true
+
+   */
+
+
+  /*
+
+ 字符类别
+ . 表示除了换行符(\r \n)以外的任意字符
+
+    var reg=/./;
+    reg.test("a");  //true
+    reg.test(".");  //true
+    reg.test("\r"); //false
+    reg.test("1\r");    //存在一个1，不是换行符，所以结果为：true
+    reg.test("\r\n");   //false
+
+    //注意点：如果以后要匹配.字符，不要直接写.
+    //为了匹配qq邮箱，写了 /qq.com/ 这是一个错误的写法：
+    //=>/qq.com/不仅匹配："qq.com"也匹配"qq3com" "qq@com"
+
+    //解决方案：/qq\.com/  或者 /qq[.]com/
+
+
+   */
+
+</script>
+</body>
+</html>

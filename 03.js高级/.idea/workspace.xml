@@ -2,14 +2,11 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="6f599861-1937-47a1-9213-52ebf3ab6b77" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/06.ES6常见用法/02.ES6基本操作/07-2.async错误处理.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/06.ES6常见用法/02.ES6基本操作/08-1.class类的方法.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/06.ES6常见用法/02.ES6基本操作/08-2.class类的静态方法.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/06.ES6常见用法/02.ES6基本操作/08-3.class类的继承.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/06.ES6常见用法/02.ES6基本操作/08.class类.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/07.JS库封装/01.入口函数.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/07.JS库封装/02-2.extend方法二.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/07.JS库封装/02.extend方法.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/11.模块化/01.正则/正则.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/06.ES6常见用法/02.ES6基本操作/07-1.async处理返回值.html" beforeDir="false" afterPath="$PROJECT_DIR$/06.ES6常见用法/02.ES6基本操作/07-1.async处理返回值.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/07.JS库封装/01.入口函数.html" beforeDir="false" afterPath="$PROJECT_DIR$/07.JS库封装/01.入口函数.html" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -22,11 +19,20 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/07.JS库封装/01.入口函数.html">
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/07.JS库封装/02-2.extend方法二.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="534">
-              <caret line="21" column="6" lean-forward="true" selection-start-line="21" selection-start-column="6" selection-end-line="21" selection-end-column="6" />
+            <state relative-caret-position="-2808">
+              <caret line="16" column="35" lean-forward="true" selection-start-line="16" selection-start-column="35" selection-end-line="16" selection-end-column="35" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/11.模块化/01.正则/正则.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="318">
+              <caret line="76" column="27" lean-forward="true" selection-start-line="76" selection-start-column="27" selection-end-line="76" selection-end-column="27" />
             </state>
           </provider>
         </entry>
@@ -45,6 +51,7 @@
     <findStrings>
       <find>super</find>
       <find>const</find>
+      <find>F</find>
     </findStrings>
     <replaceStrings>
       <replace>let</replace>
@@ -56,9 +63,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/01.ES6" />
-        <option value="$PROJECT_DIR$/02.ES6.js" />
-        <option value="$PROJECT_DIR$/03.ES6.html" />
         <option value="$PROJECT_DIR$/请求.html" />
         <option value="$PROJECT_DIR$/01.基础.html" />
         <option value="$PROJECT_DIR$/03.ES6.js" />
@@ -105,12 +109,18 @@
         <option value="$PROJECT_DIR$/06.ES6常见用法/02.ES6基本操作/08-2.class类的静态方法.html" />
         <option value="$PROJECT_DIR$/06.ES6常见用法/02.ES6基本操作/08-3.class类的继承.html" />
         <option value="$PROJECT_DIR$/07.JS库封装/01.入口函数.html" />
+        <option value="$PROJECT_DIR$/../../汇维页面/css/style.css" />
+        <option value="$PROJECT_DIR$/07.JS库封装/02.extend方法.html" />
+        <option value="$PROJECT_DIR$/07.JS库封装/02-2.extend方法二.html" />
+        <option value="$PROJECT_DIR$/11.模块化.html" />
+        <option value="$PROJECT_DIR$/11.模块化/01.正则/正则.html" />
       </list>
     </option>
   </component>
   <component name="ProjectFrameBounds" fullScreen="true">
+    <option name="y" value="23" />
     <option name="width" value="1680" />
-    <option name="height" value="1050" />
+    <option name="height" value="931" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectView">
@@ -126,6 +136,11 @@
               <item name="03.js高级" type="b2602c69:ProjectViewProjectNode" />
               <item name="03.js高级" type="462c0819:PsiDirectoryNode" />
             </path>
+            <path>
+              <item name="03.js高级" type="b2602c69:ProjectViewProjectNode" />
+              <item name="03.js高级" type="462c0819:PsiDirectoryNode" />
+              <item name="11.模块化" type="462c0819:PsiDirectoryNode" />
+            </path>
           </expand>
           <select />
         </subPane>
@@ -137,7 +152,7 @@
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
-    <property name="settings.editor.selected.configurable" value="preferences.sourceCode.HTML" />
+    <property name="settings.editor.selected.configurable" value="reference.settingsdialog.IDE.editor.colors.Color Scheme Font" />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
@@ -193,18 +208,20 @@
       <workItem from="1558411089857" duration="5381000" />
       <workItem from="1558484587348" duration="16650000" />
       <workItem from="1558533967891" duration="228000" />
-      <workItem from="1558663858156" duration="4392000" />
+      <workItem from="1558663858156" duration="5942000" />
+      <workItem from="1558746939208" duration="8520000" />
+      <workItem from="1558835385178" duration="2822000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="80740000" />
+    <option name="totallyTimeSpent" value="93632000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="0" width="1680" height="1050" extended-state="0" />
     <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.029535865" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.11452682" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
@@ -227,33 +244,6 @@
     <option name="version" value="1" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/请求.html" />
-    <entry file="file://$APPLICATION_HOME_DIR$/plugins/JavaScriptLanguage/jsLanguageServicesImpl/external/lib.es5.d.ts">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="450">
-          <caret line="206" column="85" lean-forward="true" selection-start-line="206" selection-start-column="85" selection-end-line="206" selection-end-column="85" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/01.study-ES6/js原生数据的双向绑定的实现.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="209">
-          <caret line="13" column="25" selection-start-line="13" selection-start-column="11" selection-end-line="13" selection-end-column="25" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../../../../wangyang_data/软件开发视频/web前端/珠峰WEB前端/201812/1.es6/8.class.es5.2.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-2292" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../../../../wangyang_data/软件开发视频/web前端/珠峰WEB前端/201812/1.es6/8.class.es5.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="731">
-          <caret line="55" column="4" lean-forward="true" selection-start-line="2" selection-end-line="55" selection-end-column="4" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/04.ES6.html" />
     <entry file="file://$PROJECT_DIR$/01.study-ES6/03.ES6.js">
       <provider selected="true" editor-type-id="text-editor">
@@ -539,8 +529,43 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/07.JS库封装/01.入口函数.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="534">
-          <caret line="21" column="6" lean-forward="true" selection-start-line="21" selection-start-column="6" selection-end-line="21" selection-end-column="6" />
+        <state relative-caret-position="-257">
+          <caret line="124" column="32" lean-forward="true" selection-start-line="124" selection-start-column="32" selection-end-line="124" selection-end-column="32" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../../汇维页面/css/style.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="320">
+          <caret line="9" column="31" selection-start-line="9" selection-start-column="31" selection-end-line="9" selection-end-column="31" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/07.JS库封装/02.extend方法.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="858">
+          <caret line="44" column="33" selection-start-line="44" selection-start-column="33" selection-end-line="44" selection-end-column="33" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/11.模块化.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="246">
+          <caret line="14" column="14" selection-start-line="14" selection-start-column="9" selection-end-line="14" selection-end-column="14" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/07.JS库封装/02-2.extend方法二.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-2808">
+          <caret line="16" column="35" lean-forward="true" selection-start-line="16" selection-start-column="35" selection-end-line="16" selection-end-column="35" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/11.模块化/01.正则/正则.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="318">
+          <caret line="76" column="27" lean-forward="true" selection-start-line="76" selection-start-column="27" selection-end-line="76" selection-end-column="27" />
         </state>
       </provider>
     </entry>
